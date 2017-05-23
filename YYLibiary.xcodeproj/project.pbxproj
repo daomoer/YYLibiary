@@ -26,6 +26,8 @@
 		1B4AB3371ECD71D3005DBFC2 /* YYLibiaryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4AB3361ECD71D3005DBFC2 /* YYLibiaryTests.swift */; };
 		1B4AB3421ECD71D3005DBFC2 /* YYLibiaryUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4AB3411ECD71D3005DBFC2 /* YYLibiaryUITests.swift */; };
 		1B4AB3561ECD7525005DBFC2 /* YYHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4AB3551ECD7525005DBFC2 /* YYHomeViewController.swift */; };
+		1B8596261ED3E1E7009259D8 /* YYCaCheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8596251ED3E1E7009259D8 /* YYCaCheViewController.swift */; };
+		1B8596281ED3E21C009259D8 /* YYCaChe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B8596271ED3E21C009259D8 /* YYCaChe.swift */; };
 		2CC8231533EAA5AA4B83CF9B /* Pods_YYLibiary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C67FBCAA32F25B01C1CC835 /* Pods_YYLibiary.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +74,9 @@
 		1B4AB3411ECD71D3005DBFC2 /* YYLibiaryUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYLibiaryUITests.swift; sourceTree = "<group>"; };
 		1B4AB3431ECD71D3005DBFC2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B4AB3551ECD7525005DBFC2 /* YYHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYHomeViewController.swift; sourceTree = "<group>"; };
+		1B8596201ED3E01C009259D8 /* YYLibiary-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "YYLibiary-Bridging-Header.h"; sourceTree = "<group>"; };
+		1B8596251ED3E1E7009259D8 /* YYCaCheViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYCaCheViewController.swift; sourceTree = "<group>"; };
+		1B8596271ED3E21C009259D8 /* YYCaChe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YYCaChe.swift; sourceTree = "<group>"; };
 		5135D24E760EE8CD5EFFF748 /* Pods-YYLibiary.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYLibiary.release.xcconfig"; path = "Pods/Target Support Files/Pods-YYLibiary/Pods-YYLibiary.release.xcconfig"; sourceTree = "<group>"; };
 		7C67FBCAA32F25B01C1CC835 /* Pods_YYLibiary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YYLibiary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DE6A76C63D7D51B02BF6D471 /* Pods-YYLibiary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YYLibiary.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YYLibiary/Pods-YYLibiary.debug.xcconfig"; sourceTree = "<group>"; };
@@ -169,6 +174,7 @@
 		1B4AB3201ECD71D3005DBFC2 /* YYLibiary */ = {
 			isa = PBXGroup;
 			children = (
+				1B8596241ED3E1CA009259D8 /* YYCaChe */,
 				1B2C97EB1ECE9B0B00EF8841 /* BannerView */,
 				1B2C97E61ECE92A100EF8841 /* ScrollView */,
 				1B2C97DD1ECE929900EF8841 /* CollectionView */,
@@ -178,6 +184,7 @@
 				1B4AB3281ECD71D3005DBFC2 /* Assets.xcassets */,
 				1B4AB32A1ECD71D3005DBFC2 /* LaunchScreen.storyboard */,
 				1B4AB32D1ECD71D3005DBFC2 /* Info.plist */,
+				1B8596201ED3E01C009259D8 /* YYLibiary-Bridging-Header.h */,
 			);
 			path = YYLibiary;
 			sourceTree = "<group>";
@@ -198,6 +205,15 @@
 				1B4AB3431ECD71D3005DBFC2 /* Info.plist */,
 			);
 			path = YYLibiaryUITests;
+			sourceTree = "<group>";
+		};
+		1B8596241ED3E1CA009259D8 /* YYCaChe */ = {
+			isa = PBXGroup;
+			children = (
+				1B8596251ED3E1E7009259D8 /* YYCaCheViewController.swift */,
+				1B8596271ED3E21C009259D8 /* YYCaChe.swift */,
+			);
+			path = YYCaChe;
 			sourceTree = "<group>";
 		};
 		473FF9BDF9AD33559447D0A6 /* Pods */ = {
@@ -288,6 +304,7 @@
 				TargetAttributes = {
 					1B4AB31D1ECD71D3005DBFC2 = {
 						CreatedOnToolsVersion = 8.3.1;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					1B4AB3311ECD71D3005DBFC2 = {
@@ -404,11 +421,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1B4AB3221ECD71D3005DBFC2 /* AppDelegate.swift in Sources */,
+				1B8596261ED3E1E7009259D8 /* YYCaCheViewController.swift in Sources */,
 				1B2C97E51ECE929900EF8841 /* YYCollectionViewController.swift in Sources */,
 				1B2C97E41ECE929900EF8841 /* YYCollectionView.swift in Sources */,
 				1B2C97F61ECE9B0B00EF8841 /* LLFilledPageControl.swift in Sources */,
 				1B2C97F41ECE9B0B00EF8841 /* LLCycleScrollView.swift in Sources */,
 				1B2C97F71ECE9B0B00EF8841 /* LLPillPageControl.swift in Sources */,
+				1B8596281ED3E21C009259D8 /* YYCaChe.swift in Sources */,
 				1B2C97F81ECE9B0B00EF8841 /* LLSnakePageControl.swift in Sources */,
 				1B2C97FC1ECE9B2300EF8841 /* YYBannerViewController.swift in Sources */,
 				1B2C97E91ECE92A100EF8841 /* YYScrollView.swift in Sources */,
@@ -516,6 +535,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -559,6 +579,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -570,10 +591,13 @@
 			baseConfigurationReference = DE6A76C63D7D51B02BF6D471 /* Pods-YYLibiary.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = YYLibiary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YYtest.YYLibiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YYLibiary/YYLibiary-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -583,10 +607,12 @@
 			baseConfigurationReference = 5135D24E760EE8CD5EFFF748 /* Pods-YYLibiary.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = YYLibiary/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YYtest.YYLibiary;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "YYLibiary/YYLibiary-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

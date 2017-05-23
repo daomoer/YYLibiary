@@ -24,6 +24,9 @@ class YYHomeViewController: UITableViewController {
         
         classVCList.append(["title":"YYBannerViewController",
                             "class":YYBannerViewController.self])
+        
+        classVCList.append(["title":"YYCaCheViewController",
+                            "class":YYCaCheViewController.self])
     }
 
     override func didReceiveMemoryWarning() {
